@@ -1,0 +1,120 @@
+@import '../../styles/colors';
+
+.navigation {
+	display: flex;
+	column-gap: 58px;
+	align-items: center;
+
+	@media only screen and (max-width: 768px) {
+		position: fixed;
+		top: 104px;
+		left: 0;
+
+		flex-direction: column;
+		row-gap: 40px;
+
+		padding: 40px 20px;
+		width: 100%;
+
+		transform: translate(-100%, 0);
+		opacity: 0;
+		transition: all 0.4s;
+		background-color: $page-background-color;
+	}
+
+	.navList {
+		display: flex;
+		column-gap: 44px;
+
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+			row-gap: 20px;
+			align-items: center;
+		}
+
+		.navItem {
+			display: flex;
+			transition: color 0.4s;
+
+			&:hover,
+			&:focus {
+				color: $accent-color;
+				transition: color 0.4s;
+			}
+
+			.navLink {
+				padding: 38px 0;
+
+				font-weight: 600;
+				font-size: 24px;
+
+				@media only screen and (max-width: 768px) {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	.navListSocial {
+		display: flex;
+		align-items: center;
+		column-gap: 40px;
+
+
+		@media only screen and (max-width: 768px) {
+			flex-direction: column;
+			row-gap: 20px;
+		}
+
+		.navItem {
+			display: flex;
+
+			.navLink {
+				color: $accent-color;
+				transition: color 0.3s;
+
+				font-weight: 600;
+				font-size: 24px;
+
+				&:hover,
+				&:focus {
+					color: $hover-color;
+					transition: color 0.3s;
+				}
+			}
+		}
+
+		.navItemWrapperSocial {
+			display: flex;
+			align-items: center;
+			column-gap: 20px;
+
+			.navLink {
+				display: flex;
+				transition: all 0.3s;
+
+				.navLinkIcon {
+					path {
+						transition: all 0.3s;
+					}
+				}
+
+				&:hover,
+				&:focus {
+					.navLinkIcon {
+						path {
+							fill: $hover-color;
+							transition: all 0.3s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.visibleMenu {
+	transform: translate(0, 0);
+	opacity: 1;
+	transition: all 0.4s;
+}

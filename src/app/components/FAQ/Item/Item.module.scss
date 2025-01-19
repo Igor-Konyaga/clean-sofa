@@ -1,0 +1,55 @@
+.item {
+  overflow: hidden;
+  position: relative;
+
+  .btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 26px 20px;
+
+    background-color: #F2EDE9;
+
+    font-weight: 600;
+    font-size: 24px;
+    text-align: start;
+    cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      font-size: 20px;
+    }
+
+    .title {
+      max-width: 940px;
+
+      @media screen and (max-width: 700px) {
+        max-width: 250px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .desc {
+    max-height: 0;
+    padding: 0 34px;
+    font-size: 22px;
+    line-height: 1.4;
+    letter-spacing: 0.01em;
+
+    transition: max-height 0.4s linear, padding-top, 0.3s linear, padding-bottom 0.3s linear;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  .open {
+    max-height: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow-y: auto;
+
+    transition: max-height 0.4s linear, padding-top, 0.3s linear, padding-bottom 0.3s linear;
+  }
+}

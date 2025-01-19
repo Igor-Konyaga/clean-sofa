@@ -1,0 +1,82 @@
+@import '../../styles/colors';
+
+
+.heroSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 104px;
+  min-height: 1024px;
+
+  background-color: #fff;
+  background-image: url(../../../../public/images/mainBackground.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 15px;
+    background-image: url(../../../../public/images/mainBackgroundMob.png);
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: 800px;
+  }
+
+  .heroInfo {
+    margin-top: 240px;
+
+    .heroTitle {
+      margin-bottom: 20px;
+      color: $text-color-light;
+      font-weight: 700;
+      font-size: 64px;
+
+      @media screen and (max-width: 768px) {
+        font-weight: 600;
+        font-size: 24px;
+      }
+    }
+
+    .heroDesc {
+      max-width: 645px;
+      margin-bottom: 40px;
+      color: $text-color-light;
+      font-weight: 600;
+      font-size: 24px;
+
+      @media screen and (max-width: 768px) {
+        max-width: 320px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.24;
+        letter-spacing: 0.01em;
+      }
+    }
+
+    .heroBtn {
+      display: flex;
+      justify-content: center;
+      background-color: $accent-color;
+      font-weight: 600;
+      font-size: 24px;
+
+      transition: all 0.3s;
+
+      &:hover,
+      &:focus {
+        background-color: $hover-color;
+        transition: all 0.3s;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 100%;
+        max-width: 330px;
+        font-size: 20px;
+      }
+
+      .heroLink {
+        padding: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+.stagesWork {
+	padding-top: 100px;
+
+	@media screen and (max-width: 768px) {
+		padding-top: 60px;
+	}
+	.stagesWorkTitle {
+		margin-bottom: 60px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 48px;
+
+		@media screen and (max-width: 768px) {
+			margin-bottom: 40px;
+			text-align: center;
+			font-weight: 600;
+			font-size: 24px;
+		}
+	}
+
+	.stagesWorkList {
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+
+		.stagesWorkListItem {
+			display: flex;
+			column-gap: 60px;
+			padding: 30px 60px 0;
+
+			background-color: #fff;
+			box-shadow: 0 4px 4px rgba(60, 69, 88, 0.22);
+
+			@media screen and (max-width: 768px) {
+				flex-direction: column;
+				row-gap: 20px;
+				padding: 30px 40px;
+			}
+
+
+			.image {
+				width: auto;
+				height: auto;
+			}
+
+			.wrapperInfo {
+				.itemTitle {
+					margin-bottom: 12px;
+					font-weight: 600;
+					font-size: 26px;
+
+					@media screen and (max-width: 768px) {
+						font-size: 24px;
+						text-align: center;
+					}
+				}
+
+				.itemDesc {
+					font-size: 20px;
+					max-width: 700px;
+
+					@media screen and (max-width: 768px) {
+						font-size: 18px;
+					}
+				}
+			}
+
+
+		}
+	}
+}

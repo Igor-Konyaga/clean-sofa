@@ -1,0 +1,41 @@
+@import '../../styles/colors';
+
+.price {
+	padding-top: 100px;
+	width: 100%;
+
+	@media screen and (max-width: 768px){
+		padding-top: 60px;
+	}
+
+	@media screen and (min-width: 768px){
+		background-image: url(../../../../public/images/priceBackground.png);
+		background-position: top 220px center;
+		background-size: 1440px 877px;
+		background-repeat: no-repeat;
+	}
+
+	.priceTitle {
+		margin-bottom: 60px;
+		text-align: center;
+		font-weight: 700;
+		font-size: 48px;
+
+		@media screen and (max-width: 768px){
+			margin-bottom: 40px;
+			font-weight: 600;
+			font-size: 24px;
+		}
+	}
+
+	.calculator {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 20px 16px;
+
+		@media screen and (min-width: 768px){
+			padding: 80px 100px;
+		}
+	}
+}
