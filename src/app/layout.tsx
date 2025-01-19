@@ -1,20 +1,20 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.scss";
+import type { Metadata } from 'next';
+import { Agdasima, Arima, Josefin_Sans } from 'next/font/google';
+import './globals.scss';
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const josefinSans = Josefin_Sans({
+  subsets: ['latin'],
+  weight: ['600'],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const arima = Arima({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "Clean Sofa",
-  description: "Хімчистка меблів",
+  title: 'Clean Sofa',
+  description: 'Хімчистка меблів',
 };
 
 export default function RootLayout({
@@ -24,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body className={`${josefinSans.className} ${arima.className}`}>
         {children}
       </body>
     </html>

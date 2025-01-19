@@ -4,8 +4,8 @@ import Link from 'next/link';
 import styles from './Header.module.scss';
 import { Navigation } from '../Navigation/Navigation';
 import { MenuIcon } from '../CustomIcons/MenuIcon/MenuIcon';
-import { RxCross1 as IconCross } from "react-icons/rx";
-import {FormEvent, useState} from 'react';
+import { RxCross1 as IconCross } from 'react-icons/rx';
+import { FormEvent, useState } from 'react';
 
 export const Header = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
@@ -17,18 +17,18 @@ export const Header = () => {
       <div className={styles.headerContainer}>
         <div>
           <Link className={styles.logo} href={'/'}>
-            <p className={styles.logoName}>DSR</p>
-            <div className={styles.logoInfo}>
-              <p className={styles.logoTitle}>Dezinsector</p>
-              <p className={styles.logoText}>Знищення шкідників</p>
-            </div>
+            <p className={styles.logoName}>Clean Sofa</p>
           </Link>
         </div>
 
-         <Navigation setOpenMenu={setVisibleMenu}  openMenu={visibleMenu} />
+        <Navigation setOpenMenu={setVisibleMenu} openMenu={visibleMenu} />
 
-        <button onClick={handleClickMenu} className={styles.menuBtn} >
-          {visibleMenu ? <IconCross className={styles.iconCross}/> : <MenuIcon className={styles.iconMenu} />}
+        <button onClick={handleClickMenu} className={styles.menuBtn}>
+          {visibleMenu ? (
+            <IconCross className={styles.iconCross} />
+          ) : (
+            <MenuIcon className={styles.iconMenu} />
+          )}
         </button>
       </div>
     </header>

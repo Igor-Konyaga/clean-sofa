@@ -14,7 +14,7 @@
 	.headerContainer {
 		display: flex;
 		align-items: center;
-		column-gap: 58px;
+		justify-content: space-between;
 
 		max-width: 1440px;
 		margin: 0 auto;
@@ -37,46 +37,27 @@
 			}
 
 			.logoName {
-				display: flex;
-				justify-content: center;
-				align-items: center;
-
-				width: 64px;
-				height: 64px;
-
-				color: $accent-color;
-				background-color: $logo-background-color;
-				border-radius: 50%;
-
-				font-size: 18px;
-				font-weight: 700;
-				letter-spacing: 1px;
+				font-family: 'Josefin Sans';
+				color: $text-color;
+				font-size: 36px;
+				font-weight: 600;
 			}
 
-			.logoInfo {
-				.logoTitle {
-					font-size: 26px;
-					font-weight: 500;
-					margin-bottom: 4px;
-				}
-
-				.logoText {
-					font-weight: 500;
-					font-size: 14px;
-				}
-			}
 		}
 
 		.menuBtn {
 			cursor: pointer;
+
 			@media screen and (min-width: 768px) {
 				display: none;
 			}
 		}
-		.iconCross{
+
+		.iconCross {
 			width: 40px;
 			height: 40px;
-			path{
+
+			path {
 				fill: $accent-color;
 			}
 		}
