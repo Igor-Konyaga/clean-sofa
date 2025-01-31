@@ -6,6 +6,7 @@ import { Navigation } from '../Navigation/Navigation';
 import { MenuIcon } from '../CustomIcons/MenuIcon/MenuIcon';
 import { RxCross1 as IconCross } from 'react-icons/rx';
 import { FormEvent, useState } from 'react';
+import { DropIcon } from '../CustomIcons/DropIcon/DropIcon';
 
 export const Header = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);
@@ -17,7 +18,8 @@ export const Header = () => {
       <div className={styles.headerContainer}>
         <div>
           <Link className={styles.logo} href={'/'}>
-            <p className={styles.logoName}>Clean Sofa</p>
+            <p className={styles.logoName}>АнтиБруд</p>
+            <DropIcon width={42} height={42} />
           </Link>
         </div>
 

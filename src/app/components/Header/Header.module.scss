@@ -28,8 +28,7 @@
 
 		.logo {
 			display: flex;
-			align-items: center;
-			column-gap: 18px;
+			column-gap: 8px;
 
 			@media only screen and (max-width: 768px) {
 				padding: 20px 0;
