@@ -23,7 +23,7 @@ export const Statistics = () => {
         <ul className={styles.statisticsList}>
           {data.map(({ title, value }) => {
             return (
-              <li key={value} className={styles.statisticsItem}>
+              <li key={title} className={styles.statisticsItem}>
                 <p className={styles.statisticsValue}>{value}+</p>
                 <p className={styles.statisticsTitle}>{title}</p>
               </li>
