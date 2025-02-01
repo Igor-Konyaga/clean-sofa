@@ -6,6 +6,7 @@
 	justify-content: center;
 	min-height: 1024px;
 	padding-bottom: 60px;
+	margin-bottom: 60px;
 
 	background-image: url(../../../../public/images/mainBackground.png);
 	background-size: cover;
@@ -20,8 +21,6 @@
 	@media screen and (max-width: 768px) {
 		min-height: 800px;
 	}
-
-
 
 	.heroInfo {
 		margin-top: auto;

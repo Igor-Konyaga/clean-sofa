@@ -24,7 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${josefinSans.className} ${arima.className}`}>
+      <body
+        style={{ fontWeight: '400' }}
+        className={`${josefinSans.className} ${arima.className}`}
+      >
         {children}
       </body>
     </html>

@@ -8,13 +8,12 @@
 
 	.text {
 		padding: 40px 0;
-		background-color: $header-background-color;
 
 		font-weight: 500;
 		font-size: 14px;
 		text-align: center;
 
-		@media screen and (max-width: 768px){
+		@media screen and (max-width: 768px) {
 			font-size: 12px;
 		}
 	}
