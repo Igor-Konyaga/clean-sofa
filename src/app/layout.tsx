@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Agdasima, Arima, Josefin_Sans } from 'next/font/google';
+import { Arima, Josefin_Sans } from 'next/font/google';
 import './globals.scss';
 
 const josefinSans = Josefin_Sans({

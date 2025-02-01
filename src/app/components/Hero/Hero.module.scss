@@ -2,81 +2,76 @@
 
 
 .heroSection {
-  display: flex;
-  justify-content: center;
-  padding-top: 104px;
-  min-height: 1024px;
+	display: flex;
+	justify-content: center;
+	min-height: 1024px;
+	padding-bottom: 60px;
 
-  background-color: #fff;
-  background-image: url(../../../../public/images/mainBackground.png);
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+	background-image: url(../../../../public/images/mainBackground.png);
+	background-size: cover;
+	background-position: bottom center;
+	background-repeat: no-repeat;
 
-  @media screen and (max-width: 768px) {
-    padding: 0 15px;
-    background-image: url(../../../../public/images/mainBackgroundMob.png);
-  }
+	@media screen and (max-width: 768px) {
+		padding: 0 15px;
+		background-image: url(../../../../public/images/mainBackgroundMob.png);
+	}
 
-  @media screen and (max-width: 768px) {
-    min-height: 800px;
-  }
+	@media screen and (max-width: 768px) {
+		min-height: 800px;
+	}
 
-  .heroInfo {
-    margin-top: 240px;
 
-    .heroTitle {
-      margin-bottom: 20px;
-      color: $text-color-light;
-      font-weight: 700;
-      font-size: 64px;
 
-      @media screen and (max-width: 768px) {
-        font-weight: 600;
-        font-size: 24px;
-      }
-    }
+	.heroInfo {
+		margin-top: auto;
 
-    .heroDesc {
-      max-width: 645px;
-      margin-bottom: 40px;
-      color: $text-color-light;
-      font-weight: 600;
-      font-size: 24px;
+		.wrapperImg {
+			margin-bottom: -46px;
+		}
 
-      @media screen and (max-width: 768px) {
-        max-width: 320px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.24;
-        letter-spacing: 0.01em;
-      }
-    }
+		.heroSubtitle {
+			margin-bottom: 40px;
+			font-weight: 500;
+			font-size: 36px;
+			text-align: center;
 
-    .heroBtn {
-      display: flex;
-      justify-content: center;
-      background-color: $accent-color;
-      font-weight: 600;
-      font-size: 24px;
+			@media screen and (max-width: 768px) {
+				max-width: 320px;
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 1.24;
+				letter-spacing: 0.01em;
+			}
+		}
 
-      transition: all 0.3s;
+		.heroBtn {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			max-width: 230px;
+			margin: 0 auto;
+			background-color: $accent-color;
+			border-radius: 8px;
+			font-size: 24px;
 
-      &:hover,
-      &:focus {
-        background-color: $hover-color;
-        transition: all 0.3s;
-      }
+			transition: all 0.3s;
 
-      @media screen and (max-width: 768px) {
-        width: 100%;
-        max-width: 330px;
-        font-size: 20px;
-      }
+			&:hover,
+			&:focus {
+				background-color: $hover-color;
+				transition: all 0.3s;
+			}
 
-      .heroLink {
-        padding: 16px;
-      }
-    }
-  }
+			@media screen and (max-width: 768px) {
+				width: 100%;
+				max-width: 330px;
+				font-size: 20px;
+			}
+
+			.heroLink {
+				padding: 16px;
+			}
+		}
+	}
 }

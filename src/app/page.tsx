@@ -13,22 +13,20 @@ import styles from './page.module.scss';
 export default function Home() {
   return (
     <div className={styles.page}>
-            <Container>
-                <Header/>
-            </Container>
-            <main className={styles.main}>
-                <Hero/>
-                <Container>
-                    <AboutUs/>
-                    <Services/>
-                    <StagesWork/>
-                    <Price/>
-                    <FAQ/>
-                    <ConsultationForm/>
-                </Container>
-            </main>
+      <Header />
+      <main className={styles.main}>
+        <Hero />
+        <Container>
+          <AboutUs />
+          <Services />
+          <StagesWork />
+          <Price />
+          <FAQ />
+          <ConsultationForm />
+        </Container>
+      </main>
 
-            <Footer/>
-        </div>
+      <Footer />
+    </div>
   );
 }
