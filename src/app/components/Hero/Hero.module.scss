@@ -15,7 +15,7 @@
 
 	@media screen and (max-width: 768px) {
 		padding: 0 15px;
-		background-image: url(../../../../public/images/mainBackgroundMob.png);
+		background-image: '';
 	}
 
 	@media screen and (max-width: 768px) {
@@ -70,6 +70,7 @@
 
 			.heroLink {
 				padding: 16px;
+				flex-grow: 1;
 			}
 		}
 	}

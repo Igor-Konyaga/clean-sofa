@@ -7,7 +7,6 @@ import { Header } from './components/Header/Header';
 import { Hero } from './components/Hero/Hero';
 import { Price } from './components/Price/Price';
 import { Services } from './components/Services/Services';
-import { StagesWork } from './components/StagesWork/StagesWork';
 import { Statistics } from './components/Statistics/Statistics';
 import styles from './page.module.scss';
 
@@ -21,11 +20,10 @@ export default function Home() {
         <Container>
           <AboutUs />
           <Services />
-          <StagesWork />
-          <Price />
-          <FAQ />
-          <ConsultationForm />
         </Container>
+        <Price />
+        <FAQ />
+        <ConsultationForm />
       </main>
 
       <Footer />
