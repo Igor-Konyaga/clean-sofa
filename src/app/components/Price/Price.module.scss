@@ -3,7 +3,7 @@
 .price {
 	position: relative;
 	padding-top: 220px;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
 
 	&::before {
 		content: '';
@@ -12,7 +12,7 @@
 		left: 0;
 		z-index: -1;
 		width: 100%;
-		height: 876px;
+		height: 1106px;
 		background-image: url(../../../../public/images/priceBackground.png);
 		background-size: cover;
 		background-position: bottom;
@@ -25,9 +25,10 @@
 	}
 
 	.content {
-
 		.priceTitle {
-			margin-bottom: 140px;
+			margin-bottom: 100px;
+			font-size: 48px;
+			letter-spacing: 4px;
 
 			@media screen and (max-width: 768px) {
 				margin-bottom: 40px;
@@ -37,10 +38,42 @@
 		}
 
 		.priceTable {
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
 			width: 100%;
-			height: 670px;
+			padding: 40px;
 			border-radius: 8px;
 			background-color: rgba(250, 252, 251, 0.8);
+
+
+			.subtitle {
+				margin-bottom: 14px;
+				font-family: 'Arima';
+				font-size: 40px;
+				letter-spacing: 1px;
+				text-align: center;
+			}
+
+			.priceList {
+				display: flex;
+				flex-direction: column;
+				row-gap: 12px;
+
+				.priceItem {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+
+					.itemTitle {
+						font-size: 24px;
+					}
+
+					.itemPrice {
+						font-size: 34px;
+					}
+				}
+			}
 		}
 	}
 
