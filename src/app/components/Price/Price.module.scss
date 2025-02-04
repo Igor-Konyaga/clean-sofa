@@ -2,7 +2,7 @@
 
 .price {
 	position: relative;
-	padding-top: 220px;
+	padding-top: 120px;
 	padding-bottom: 50px;
 
 	&::before {
@@ -28,7 +28,7 @@
 		.priceTitle {
 			margin-bottom: 100px;
 			font-size: 48px;
-			letter-spacing: 4px;
+			letter-spacing: 8px;
 
 			@media screen and (max-width: 768px) {
 				margin-bottom: 40px;

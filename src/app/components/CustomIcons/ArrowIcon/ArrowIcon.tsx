@@ -1,35 +1,21 @@
 import React from 'react';
 
-type Props = {
-  className: string;
-  active?: boolean;
-};
-
-export const ArrowIcon = ({ className = '', active }: Props) => {
+export const ArrowIcon = () => {
   return (
-    <>
-      {active ? (
-        <svg
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M36 30L20.9412 14L4 30" stroke="#ED8812" strokeWidth="2" />
-        </svg>
-      ) : (
-        <svg
-          className={className}
-          width="40"
-          height="40"
-          viewBox="0 0 40 40"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M4 14L19.0588 30L36 14" stroke="#ED8812" strokeWidth="2" />
-        </svg>
-      )}
-    </>
+    <svg
+      width="42"
+      height="49"
+      viewBox="0 0 42 49"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M28.5001 5V25H37.4651C37.9595 25.0001 38.4427 25.1468 38.8538 25.4215C39.2648 25.6962 39.5851 26.0866 39.7743 26.5434C39.9635 27.0001 40.013 27.5027 39.9166 27.9876C39.8201 28.4725 39.5821 28.9179 39.2326 29.2675L22.7676 45.7325C22.2988 46.2012 21.663 46.4645 21.0001 46.4645C20.3372 46.4645 19.7014 46.2012 19.2326 45.7325L2.76761 29.2675C2.41809 28.9179 2.18007 28.4725 2.08365 27.9876C1.98723 27.5027 2.03674 27.0001 2.22592 26.5434C2.41509 26.0866 2.73544 25.6962 3.14647 25.4215C3.55749 25.1468 4.04074 25.0001 4.53511 25H13.5001V5C13.5001 4.33696 13.7635 3.70107 14.2323 3.23223C14.7012 2.76339 15.3371 2.5 16.0001 2.5H26.0001C26.6632 2.5 27.299 2.76339 27.7679 3.23223C28.2367 3.70107 28.5001 4.33696 28.5001 5Z"
+        stroke="#77DECA"
+        strokeWidth="4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
   );
 };

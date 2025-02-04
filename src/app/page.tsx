@@ -22,10 +22,11 @@ export default function Home() {
           <Services />
         </Container>
         <Price />
-        <FAQ />
-        <ConsultationForm />
+        <Container>
+          <FAQ />
+          <ConsultationForm />
+        </Container>
       </main>
-
       <Footer />
     </div>
   );

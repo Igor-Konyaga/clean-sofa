@@ -19,7 +19,12 @@ export const Item: FC<Props> = ({ title, desc }) => {
         type="button"
       >
         <span className={styles.title}>{title}</span>
-        <ArrowIcon active={open} className={styles.icon} />
+
+        <span
+          className={open ? `${styles.icon} ${styles.openIcon}` : styles.icon}
+        >
+          <ArrowIcon />
+        </span>
       </button>
       <p className={open ? `${styles.desc} ${styles.open}` : styles.desc}>
         {desc}

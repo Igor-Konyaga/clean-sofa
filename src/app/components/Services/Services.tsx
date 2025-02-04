@@ -15,7 +15,7 @@ const serviceItems = [
 export const Services = () => {
   return (
     <section id="services" className={styles.services}>
-      <Title text="Послуги" level={2} className={styles.servicesTitle} />
+      <Title text="ПОСЛУГИ" level={2} className={styles.servicesTitle} />
       <ul className={styles.servicesList}>
         {serviceItems.map(({ label, src }) => {
           return (

@@ -1,55 +1,65 @@
+@import '../../../styles/colors';
+
 .item {
-  overflow: hidden;
-  position: relative;
+	overflow: hidden;
+	position: relative;
 
-  .btn {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 26px 20px;
+	&:not(:first-child) {
+		margin-top: 20px;
+	}
 
-    background-color: #F2EDE9;
+	.btn {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		padding: 16px 20px;
+		border-radius: 8px;
 
-    font-weight: 600;
-    font-size: 24px;
-    text-align: start;
-    cursor: pointer;
+		background-color: $secondary-background;
 
-    @media screen and (max-width: 768px) {
-      font-size: 20px;
-    }
+		font-weight: 600;
+		font-size: 24px;
+		text-align: start;
+		cursor: pointer;
 
-    .title {
-      max-width: 940px;
+		@media screen and (max-width: 768px) {
+			font-size: 20px;
+		}
 
-      @media screen and (max-width: 700px) {
-        max-width: 250px;
-        font-size: 18px;
-      }
-    }
-  }
+		.title {
+			color: $text-color;
 
-  .desc {
-    max-height: 0;
-    padding: 0 34px;
-    font-size: 22px;
-    line-height: 1.4;
-    letter-spacing: 0.01em;
+			@media screen and (max-width: 700px) {
+				max-width: 250px;
+				font-size: 18px;
+			}
+		}
 
-    transition: max-height 0.4s linear, padding-top, 0.3s linear, padding-bottom 0.3s linear;
+		.icon {
+			transition: transform 0.3s linear;
+		}
 
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
-    }
-  }
+		.openIcon {
+			transform: rotate(180deg);
+			transition: transform 0.3s linear;
+		}
+	}
 
-  .open {
-    max-height: 300px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    overflow-y: auto;
+	.desc {
+		max-height: 0;
+		margin-top: 20px;
+		font-size: 24px;
 
-    transition: max-height 0.4s linear, padding-top, 0.3s linear, padding-bottom 0.3s linear;
-  }
+		transition: max-height 0.5s linear;
+
+		@media screen and (max-width: 768px) {
+			font-size: 16px;
+		}
+	}
+
+	.open {
+		max-height: 350px;
+		transition: max-height 0.5s linear;
+	}
 }

@@ -14,8 +14,8 @@ const furniture = [
 ];
 const carpet = [
   { title: 'Килими та ковролін', price: '100 грн/м2' },
+  { title: 'Покривала, ковдри (синтетика)', price: '70 грн/м2' },
   { title: 'Виведення запаху', price: '30 грн/м2' },
-  { title: 'Прання покрив (синтетика)', price: '70 грн/м2' },
   { title: 'Збрерігання килима (після 15 діб)', price: '10 грн/доба' },
   { title: 'Доставка (забрати та доставити)', price: '150 грн' },
   { title: 'Мінімальне замовлення', price: '500 грн' },
@@ -26,7 +26,7 @@ export const Price = () => {
     <section id="price" className={styles.price}>
       <Container>
         <div className={styles.content}>
-          <Title text="Прайс" level={2} className={styles.priceTitle} />
+          <Title text="ПРАЙС" level={2} className={styles.priceTitle} />
           <div className={styles.priceTable}>
             <div>
               <Title
