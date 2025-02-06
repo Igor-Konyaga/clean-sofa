@@ -3,10 +3,10 @@
 import Link from 'next/link';
 import styles from './Header.module.scss';
 import { Navigation } from '../Navigation/Navigation';
-import { MenuIcon } from '../CustomIcons/MenuIcon/MenuIcon';
 import { RxCross1 as IconCross } from 'react-icons/rx';
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 import { DropIcon } from '../CustomIcons/DropIcon/DropIcon';
+import { MenuIcon } from '../CustomIcons/MenuIcon/MenuIcon';
 
 export const Header = () => {
   const [visibleMenu, setVisibleMenu] = useState(false);

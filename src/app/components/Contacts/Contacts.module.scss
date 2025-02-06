@@ -1,0 +1,277 @@
+@import '../../styles/colors';
+
+.contacts {
+	position: relative;
+	padding-top: 120px;
+
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 760px;
+		background-image: url('../../../../public/images/contactsBackground.png');
+		background-size: cover;
+		background-position: bottom;
+		background-repeat: no-repeat;
+	}
+
+	@media screen and (max-width: 768px) {
+		padding-top: 100px;
+		padding-bottom: 140px;
+		background-position: right -160px top 60px;
+	}
+
+	.title {
+		max-width: 1200px;
+		margin: 0 auto;
+		margin-bottom: 110px;
+	}
+
+	.form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 40px;
+		max-width: 570px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+
+		border-radius: 20px;
+		background-color: rgba(250, 252, 251, 0.9);
+
+		@media screen and (max-width: 768px) {
+			padding: 24px 16px;
+		}
+
+		.title {
+			margin-bottom: 40px;
+			font-size: 38px;
+
+			@media screen and (max-width: 768px) {
+				margin-bottom: 12px;
+				font-size: 24px;
+				text-align: center;
+			}
+
+		}
+
+		.formBody {
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+			margin-bottom: 40px;
+			width: 100%;
+
+			@media screen and (max-width: 768px) {
+				margin-bottom: 20px;
+			}
+
+			.wrapperInput {
+				display: flex;
+				flex-direction: column;
+				row-gap: 4px;
+
+				.label {
+					font-size: 18px;
+
+					@media screen and (max-width: 768px) {
+						font-size: 16px;
+					}
+				}
+
+				.input {
+					padding: 12px;
+					border-radius: 8px;
+					border: 1px solid $border-color;
+					font-size: 20px;
+					background-color: transparent;
+					color: $text-color-secondary;
+					outline: none;
+
+					transition: border-color 0.3s;
+
+					&:hover,
+					&:focus {
+						transition: border-color 0.3s;
+
+						border-color: $accent-color;
+					}
+
+					&::-webkit-inner-spin-button,
+					&::-webkit-outer-spin-button {
+						-webkit-appearance: none;
+					}
+
+					&::placeholder {
+						font-size: 20px;
+
+					}
+				}
+			}
+		}
+
+		.wrapperBtn {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			width: 100%;
+
+			@media screen and (max-width: 768px) {
+				overflow: hidden;
+			}
+
+			.submitBtn {
+				padding: 14px 44px;
+				background-color: $accent-color;
+				transition: background-color 0.3s;
+
+				border-radius: 8px;
+				color: currentColor;
+				font-size: 24px;
+				cursor: pointer;
+
+				&:hover,
+				&:focus {
+					background-color: $hover-color;
+					transition: background-color 0.3s;
+				}
+
+				&:disabled {
+					background-color: #b0afad;
+					color: #f2ede9;
+				}
+			}
+
+			.message {
+				display: flex;
+				align-items: center;
+				column-gap: 6px;
+
+				position: absolute;
+				top: 50%;
+
+				transform: translate(120%, -50%);
+				opacity: 0;
+				transition: all 0.6s;
+
+				color: #20d910;
+				font-weight: 600;
+				font-size: 24px;
+
+				@media screen and (max-width: 768px) {
+					width: 180px;
+					height: 52px;
+					padding: 6px 12px;
+
+					right: 50%;
+					transform: translate(400px, -50%);
+					background-color: rgba(213, 206, 198);
+					font-size: 18px;
+				}
+
+				.icon {
+					width: 34px;
+					height: 34px;
+				}
+			}
+
+			.active {
+				opacity: 1;
+				transform: translate(0, -50%);
+				transition: all 0.6s;
+				transition-delay: 0.3s;
+
+				@media screen and (max-width: 768px) {
+					transform: translate(50%, -50%);
+				}
+			}
+		}
+	}
+
+	.contactInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 14px;
+		padding: 20px;
+		max-width: 480px;
+		margin: 0 auto;
+
+		border-radius: 20px;
+		background-color: rgba(250, 252, 251, 0.9);
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			row-gap: 14px;
+			justify-content: space-between;
+			max-width: 400px;
+
+			font-size: 26px;
+
+			.phone,
+			.location {
+				display: flex;
+				align-items: center;
+				column-gap: 8px;
+
+				transition: color 0.3s;
+
+				&:hover,
+				&:focus {
+					transition: color 0.3s;
+					color: $hover-color;
+				}
+			}
+		}
+
+		.right {
+			display: flex;
+			column-gap: 8px;
+			align-items: center;
+
+			.socialLink {
+				svg {
+					path {
+						transition: stroke 0.3s;
+					}
+				}
+
+				&:hover,
+				&:focus {
+					svg {
+						path {
+							transition: stroke 0.3s;
+							stroke: $hover-color;
+						}
+
+					}
+				}
+			}
+
+			.instSocialLink {
+				svg {
+					path {
+						transition: fill 0.3s;
+					}
+				}
+
+				&:hover,
+				&:focus {
+					svg {
+						path {
+							transition: fill 0.3s;
+							fill: $hover-color;
+						}
+					}
+				}
+			}
+		}
+	}
+
+
+}

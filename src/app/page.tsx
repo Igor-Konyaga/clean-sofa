@@ -1,5 +1,5 @@
 import { AboutUs } from './components/AboutUs/AboutUs';
-import { ConsultationForm } from './components/ConsultationForm/ConsultationForm';
+import { Contacts } from './components/Contacts/Contacts';
 import { Container } from './components/Container/Container';
 import { FAQ } from './components/FAQ/FAQ';
 import { Footer } from './components/Footer/Footer';
@@ -24,10 +24,10 @@ export default function Home() {
         <Price />
         <Container>
           <FAQ />
-          <ConsultationForm />
         </Container>
+        <Contacts />
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
