@@ -1,0 +1,37 @@
+@import '../../styles/colors';
+
+.feedbacks {
+	padding-top: 120px;
+
+	.feedbacksList {
+		display: flex;
+		gap: 40px;
+		flex-wrap: wrap;
+
+		.feedback {
+			width: calc(50% - 20px);
+
+
+			.feedbackHeader {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-bottom: 12px;
+
+				.username {
+					font-size: 36px;
+				}
+			}
+
+			.feedbackText {
+				font-size: 20px;
+				margin-bottom: 12px;
+			}
+
+			.date {
+				text-align: right;
+				color: $text-color-secondary;
+			}
+		}
+	}
+}

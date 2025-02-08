@@ -19,10 +19,16 @@
 		display: flex;
 		column-gap: 40px;
 
-		.text {
-			flex-grow: 1;
-			font-size: 20px;
+		.wrapperText {
+			display: flex;
+			flex-direction: column;
+
+			.text {
+				flex-grow: 1;
+				font-size: 20px;
+			}
 		}
+
 
 		.wrapperImg {
 			flex-grow: 1;

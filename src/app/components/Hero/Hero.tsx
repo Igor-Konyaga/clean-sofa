@@ -13,7 +13,7 @@ export const Hero = () => {
           Відчуйте справжню чистоту ваших меблів та килимів
         </h2>
         <button className={styles.heroBtn}>
-          <Link className={styles.heroLink} href={'#consultationForm'}>
+          <Link className={styles.heroLink} href={'#contactsTitle'}>
             Замовити
           </Link>
         </button>

@@ -4,15 +4,15 @@ import styles from './Statistics.module.scss';
 const data = [
   {
     title: 'Виконаних замовлень',
-    value: '2845',
+    value: '4000',
   },
   {
     title: 'Років на ринку',
-    value: '5',
+    value: '12',
   },
   {
     title: 'Задоволених кліентів',
-    value: '1000',
+    value: '1200',
   },
 ];
 

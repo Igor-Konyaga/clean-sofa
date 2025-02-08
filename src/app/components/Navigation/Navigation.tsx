@@ -1,16 +1,15 @@
 import Link from 'next/link';
 import styles from './Navigation.module.scss';
-import { InstagramIcon } from '../CustomIcons/InstagramIcon/InstagramIcon';
-import { TelegramIcon } from '../CustomIcons/TelegramIcon/TelegramIcon';
+
 import { Dispatch, SetStateAction } from 'react';
 
 export const navItems = [
   { label: 'Про нас', href: '#about-us' },
   { label: 'Послуги', href: '#services' },
   { label: 'Прайс', href: '#price' },
-  { label: 'Галерея', href: '#gallery' },
-  { label: 'Відгуки', href: '#question' },
-  { label: 'Контакти', href: '#contacts' },
+  { label: 'Галерея', href: '#galleryTitle' },
+  { label: 'Відгуки', href: '#feedbacks' },
+  { label: 'Контакти', href: '#contactsInfo' },
 ];
 
 type Props = {

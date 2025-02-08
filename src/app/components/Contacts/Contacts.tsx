@@ -18,8 +18,8 @@ export const Contacts = () => {
   const [name, setName] = useState<string>('');
   const [phone, setPhone] = useState<string>('');
 
-  const validName = name.split('').length <= 2;
-  const validPhone = phone.split('').length <= 8;
+  const validName = name.split('').length >= 2;
+  const validPhone = phone.split('').length >= 9;
 
   useEffect(() => {
     if (statusOk) {
@@ -55,9 +55,15 @@ export const Contacts = () => {
 
   return (
     <section id="contacts" className={styles.contacts}>
-      <Title text="КОНТАКТИ" level={2} className={styles.title} />
-      <form onSubmit={submitForm} className={styles.form}>
-        <h2 className={styles.title}>Ми з вами зв’яжемось</h2>
+      <Title
+        id="contactsTitle"
+        text="КОНТАКТИ"
+        level={2}
+        className={styles.title}
+      />
+      <form id="contactForm" onSubmit={submitForm} className={styles.form}>
+        <h2 className={styles.title}>Залиште заявку</h2>
+        <p className={styles.subtitle}>Ми з вами зв'яжемось</p>
         <div className={styles.formBody}>
           <div className={styles.wrapperInput}>
             <label className={styles.label} htmlFor="name">
@@ -92,7 +98,7 @@ export const Contacts = () => {
         </div>
         <div className={styles.wrapperBtn}>
           <button
-            disabled={validName || validPhone}
+            disabled={!validName || !validPhone}
             className={styles.submitBtn}
             type="submit"
           >
@@ -110,7 +116,7 @@ export const Contacts = () => {
         </div>
       </form>
 
-      <div className={styles.contactInfo}>
+      <div id="contactsInfo" className={styles.contactInfo}>
         <div className={styles.left}>
           <Link href="tel:0504320020" className={styles.phone}>
             <Phone />
@@ -129,7 +135,7 @@ export const Contacts = () => {
         <div className={styles.right}>
           <Link
             className={styles.instSocialLink}
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/himchistka_kylymiv?utm_source=qr&igsh=MThwcW1ieGNvcXRxdg%3D%3D"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -137,7 +143,7 @@ export const Contacts = () => {
           </Link>
           <Link
             className={styles.socialLink}
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/share/15pnnsSwEh/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -145,7 +151,7 @@ export const Contacts = () => {
           </Link>
           <Link
             className={styles.socialLink}
-            href=""
+            href="https://t.me/OlexandrBSE"
             target="_blank"
             rel="noopener noreferrer"
           >

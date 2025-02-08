@@ -1,16 +1,13 @@
 @import '../../styles/colors';
 
 .footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
 	width: 100%;
 
 	.text {
 		padding: 40px 0;
 
 		font-weight: 500;
-		font-size: 14px;
+		font-size: 18px;
 		text-align: center;
 
 		@media screen and (max-width: 768px) {

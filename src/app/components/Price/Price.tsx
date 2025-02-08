@@ -27,7 +27,7 @@ export const Price = () => {
       <Container>
         <div className={styles.content}>
           <Title text="ПРАЙС" level={2} className={styles.priceTitle} />
-          <div className={styles.priceTable}>
+          <div id="priceTable" className={styles.priceTable}>
             <div>
               <Title
                 text="Хімчистка меблів"
