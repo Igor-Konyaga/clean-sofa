@@ -4,6 +4,10 @@
 .gallery {
 	padding-top: 120px;
 
+	@media screen and (max-width: 768px) {
+		padding-top: 80px;
+	}
+
 	.carousel {
 		overflow: hidden;
 		margin: 0 auto;
@@ -13,6 +17,11 @@
 			column-gap: 8px;
 			max-height: 500px;
 			margin-bottom: 30px;
+
+			@media screen and (max-width: 768px) {
+				max-height: 400px;
+				margin-bottom: 16px;
+			}
 
 			.slide {
 				flex: 0 0 100%;

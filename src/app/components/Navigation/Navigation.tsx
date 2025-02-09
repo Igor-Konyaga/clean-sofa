@@ -61,7 +61,7 @@ export const Navigation = ({ openMenu, setOpenMenu }: Props) => {
           rel="noopener noreferrer"
         >
           <Location />
-          <p>м.Ужгород вул.О.Блистіва 11</p>
+          <p>Ужгород вул.О.Блистіва 11</p>
         </Link>
       </div>
 

@@ -134,7 +134,7 @@ export const Contacts = () => {
             rel="noopener noreferrer"
           >
             <Location />
-            <p>м.Ужгород вул.О.Блистіва 11</p>
+            <p>Ужгород вул.О.Блистіва 11</p>
           </Link>
         </div>
         <div className={styles.right}>
