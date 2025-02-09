@@ -7,7 +7,7 @@
 	left: 0;
 	z-index: 10;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-	background-color: rgba(235, 236, 239, 1);
+	background-color: $header-background-color;
 
 	.headerContainer {
 		display: flex;
@@ -19,7 +19,7 @@
 		padding: 0 15px;
 
 		@media only screen and (max-width: 768px) {
-			max-width: 360px;
+			max-width: 400px;
 			padding: 0 15px;
 			justify-content: space-between;
 		}
@@ -30,7 +30,7 @@
 
 			@media only screen and (max-width: 768px) {
 				padding: 20px 0;
-				column-gap: 8px;
+				column-gap: 4px;
 			}
 
 			.logoName {
@@ -38,6 +38,10 @@
 				color: $text-color;
 				font-size: 36px;
 				font-weight: 600;
+
+				@media only screen and (max-width: 768px) {
+					font-size: 32px;
+				}
 			}
 
 		}
@@ -55,7 +59,16 @@
 			height: 40px;
 
 			path {
-				fill: $accent-color;
+				fill: $text-color;
+			}
+		}
+
+		.iconMenu {
+			width: 40px;
+			height: 40px;
+
+			path {
+				stroke: $text-color;
 			}
 		}
 	}

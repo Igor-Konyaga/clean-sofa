@@ -23,16 +23,12 @@
 		text-align: start;
 		cursor: pointer;
 
-		@media screen and (max-width: 768px) {
-			font-size: 20px;
-		}
-
 		.title {
 			color: $text-color;
 
 			@media screen and (max-width: 700px) {
 				max-width: 250px;
-				font-size: 18px;
+				font-size: 22px;
 			}
 		}
 
@@ -54,7 +50,7 @@
 		transition: max-height 0.5s linear;
 
 		@media screen and (max-width: 768px) {
-			font-size: 16px;
+			font-size: 18px;
 		}
 	}
 

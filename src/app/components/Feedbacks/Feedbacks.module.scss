@@ -3,14 +3,30 @@
 .feedbacks {
 	padding-top: 120px;
 
+	@media screen and (max-width: 768px) {
+		padding-top: 40px;
+	}
+
 	.feedbacksList {
 		display: flex;
 		gap: 40px;
 		flex-wrap: wrap;
 
+		@media screen and (max-width: 768px) {
+			flex-direction: column;
+			row-gap: 20px;
+			max-height: 410px;
+			overflow-y: auto;
+			flex-wrap: nowrap;
+			padding-right: 12px;
+		}
+
 		.feedback {
 			width: calc(50% - 20px);
 
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
 
 			.feedbackHeader {
 				display: flex;
@@ -20,12 +36,20 @@
 
 				.username {
 					font-size: 36px;
+
+					@media screen and (max-width: 768px) {
+						font-size: 24px;
+					}
 				}
 			}
 
 			.feedbackText {
 				font-size: 20px;
 				margin-bottom: 12px;
+
+				@media screen and (max-width: 768px) {
+					font-size: 16px;
+				}
 			}
 
 			.date {

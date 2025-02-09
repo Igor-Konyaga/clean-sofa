@@ -10,6 +10,7 @@ import Link from 'next/link';
 import { TelegramIcon } from '../CustomIcons/TelegramIcon/TelegramIcon';
 import { FacebookIcon } from '../CustomIcons/FacebookIcon/FacebookIcon';
 import { InstagramIcon } from '../CustomIcons/InstagramIcon/InstagramIcon';
+import { Slide, toast } from 'react-toastify';
 
 const mapsUrl = `https://www.google.com/maps/place/48%C2%B035'58.5%22N+22%C2%B019'07.9%22E/@48.599572,22.318862,16z/data=!4m4!3m3!8m2!3d48.5995724!4d22.3188617?hl=uk&entry=ttu&g_ep=EgoyMDI1MDIwNC4wIKXMDSoASAFQAw%3D%3D`;
 export const Contacts = () => {
@@ -25,7 +26,7 @@ export const Contacts = () => {
     if (statusOk) {
       setTimeout(() => {
         setStatusOk(false);
-      }, 5000);
+      }, 3000);
     }
   }, [statusOk]);
 
@@ -45,7 +46,16 @@ export const Contacts = () => {
     try {
       const { data } = await fetchTelegramMessage(message);
       setStatusOk(data.ok);
+
+      toast.success('Заявка відправлена', {
+        autoClose: 3000,
+        transition: Slide,
+      });
     } catch (error) {
+      toast.error('Не вдалося відправити', {
+        autoClose: 3000,
+        transition: Slide,
+      });
       setError(error);
     } finally {
       setName('');
@@ -104,19 +114,14 @@ export const Contacts = () => {
           >
             Відправити
           </button>
-
-          <p
-            className={
-              statusOk ? `${styles.message} ${styles.active}` : styles.message
-            }
-          >
-            <MdOutlineDone className={styles.icon} />
-            Відправлено
-          </p>
         </div>
       </form>
 
-      <div id="contactsInfo" className={styles.contactInfo}>
+      <div
+        onClick={() => setStatusOk(true)}
+        id="contactsInfo"
+        className={styles.contactInfo}
+      >
         <div className={styles.left}>
           <Link href="tel:0504320020" className={styles.phone}>
             <Phone />

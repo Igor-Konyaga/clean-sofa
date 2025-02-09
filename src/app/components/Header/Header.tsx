@@ -19,7 +19,7 @@ export const Header = () => {
         <div>
           <Link className={styles.logo} href={'/'}>
             <p className={styles.logoName}>АнтиБруд</p>
-            <DropIcon width={42} height={42} />
+            <DropIcon width={36} height={36} />
           </Link>
         </div>
 

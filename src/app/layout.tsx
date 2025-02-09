@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Arima, Josefin_Sans } from 'next/font/google';
 import './globals.scss';
+import { ToastContainer } from 'react-toastify';
 
 const josefinSans = Josefin_Sans({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({
         className={`${josefinSans.className} ${arima.className}`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );

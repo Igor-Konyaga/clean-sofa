@@ -12,7 +12,7 @@ const text4 = `Якщо вам потрібне якісне чищення ди
 export const AboutUs = () => {
   return (
     <section id="about-us" className={styles.aboutUs}>
-      <Title text="ПРО НАС" level={2} className={styles.aboutTitle} />
+      <Title text="ПРО НАС" level={2} />
       <div className={styles.wrapperContent}>
         <div className={styles.wrapperText}>
           <p className={styles.text}>{text1}</p>

@@ -18,8 +18,8 @@
 		justify-content: center;
 
 		@media screen and (max-width: 768px) {
-			flex-wrap: wrap;
-			gap: 20px;
+			flex-direction: column;
+			row-gap: 20px;
 		}
 
 		.servicesListItem {
@@ -31,10 +31,6 @@
 			border-radius: 8px;
 			overflow: hidden;
 
-			@media screen and (max-width: 768px) {
-				width: calc(50% - 10px);
-			}
-
 			.wrapperImg {
 				height: 100%;
 				width: 100%;
@@ -44,13 +40,6 @@
 					height: 100%;
 					object-fit: cover;
 					object-position: bottom left;
-
-					@media screen and (max-width: 768px) {
-						object-fit: cover;
-						object-position: center;
-						max-height: 138px;
-						max-width: 138px;
-					}
 				}
 			}
 
@@ -63,6 +52,10 @@
 				background-color: rgba(250, 252, 251, 0.7);
 				text-align: center;
 				font-size: 24px;
+
+				@media screen and (max-width: 768px) {
+					font-size: 20px;
+				}
 			}
 		}
 	}

@@ -7,7 +7,7 @@ export const Hero = () => {
     <section className={styles.heroSection}>
       <div className={styles.heroInfo}>
         <div className={styles.wrapperImg}>
-          <Image src={sofa} alt="sofa" />
+          <Image className={styles.img} src={sofa} alt="sofa" />
         </div>
         <h2 className={styles.heroSubtitle}>
           Відчуйте справжню чистоту ваших меблів та килимів

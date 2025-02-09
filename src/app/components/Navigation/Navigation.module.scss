@@ -5,20 +5,26 @@
 	column-gap: 58px;
 	align-items: center;
 
+
 	@media only screen and (max-width: 768px) {
 		position: fixed;
-		top: 104px;
+		top: 82px;
 		left: 0;
 
 		flex-direction: column;
 		row-gap: 40px;
 
-		padding: 40px 20px;
+		padding: 0 20px;
+		padding-top: 40px;
 		width: 100%;
+		height: 100%;
 
 		transform: translate(-100%, 0);
 		opacity: 0;
 		transition: all 0.4s;
+		background-color: $body-background-color;
+		font-size: 22px;
+
 	}
 
 	.navList {
@@ -47,6 +53,80 @@
 
 				@media only screen and (max-width: 768px) {
 					padding: 0;
+				}
+			}
+		}
+	}
+
+	.contactInfo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 14px;
+		justify-content: space-between;
+
+		@media only screen and (min-width: 768px) {
+			display: none;
+		}
+
+		.phone,
+		.location {
+			display: flex;
+			align-items: center;
+			column-gap: 8px;
+
+			transition: color 0.3s;
+
+			&:hover,
+			&:focus {
+				transition: color 0.3s;
+				color: $hover-color;
+			}
+		}
+	}
+
+	.socialLinks {
+		display: flex;
+		column-gap: 8px;
+		align-items: center;
+
+		@media only screen and (min-width: 768px) {
+			display: none;
+		}
+
+		.socialLink {
+			svg {
+				path {
+					transition: stroke 0.3s;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				svg {
+					path {
+						transition: stroke 0.3s;
+						stroke: $hover-color;
+					}
+
+				}
+			}
+		}
+
+		.instSocialLink {
+			svg {
+				path {
+					transition: fill 0.3s;
+				}
+			}
+
+			&:hover,
+			&:focus {
+				svg {
+					path {
+						transition: fill 0.3s;
+						fill: $hover-color;
+					}
 				}
 			}
 		}

@@ -26,7 +26,7 @@ export default function Home() {
         <Price />
         <Feedbacks />
         <Container>
-          <Gallery />
+          {/* <Gallery /> */}
           <FAQ />
         </Container>
         <Contacts />
