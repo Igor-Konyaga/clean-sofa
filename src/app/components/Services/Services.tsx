@@ -2,7 +2,7 @@ import Image from 'next/image';
 import styles from './Services.module.scss';
 import carpetWashing from '/public/images/carpetWashing.jpg';
 import rotaryDevice from '/public/images/rotaryDevice.jpg';
-import furnitureСleaning from '/public/images/furnitureСleaning.png';
+import furnitureСleaning from '/public/images/furnitureСleaning.jpg';
 
 import { Title } from '@/app/shared';
 

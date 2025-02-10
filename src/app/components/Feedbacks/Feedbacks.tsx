@@ -1,7 +1,7 @@
 import { Title } from '@/app/shared';
 import styles from './Feedbacks.module.scss';
 import { Container } from '../Container/Container';
-import { StarRating } from '@/app/shared/StarRating/ui/StarRating';
+import { StarRating } from '@/app/shared/ui/StarRating/ui/StarRating';
 
 const feedbacksData = [
   {
