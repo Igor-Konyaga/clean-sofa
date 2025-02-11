@@ -6,12 +6,13 @@ import { Modal } from '@/app/shared/ui/Modal/ui/Modal';
 import { useState } from 'react';
 
 const furniture = [
-  { title: 'Диван (одне посад місце)', price: '400' },
-  { title: 'Матрац односпальний', price: '800' },
-  { title: 'Матрац двоспальний', price: '1200' },
-  { title: 'Матрац дитячий', price: '300' },
+  { title: 'Диван (одне посад місце)', price: '400-500' },
+  { title: 'Матрац односпальний', price: '800-1000' },
+  { title: 'Матрац двоспальний', price: '1200-1400' },
+  { title: 'Матрац дитячий', price: '300-500' },
+  { title: 'Матрац Топер(типу Дормео) (чистимо у цеху)', price: '600-800' },
   { title: 'Крісло', price: '700-800' },
-  { title: 'Стілець', price: '150' },
+  { title: 'Стілець', price: '150-200' },
   { title: 'Подушка', price: '100-150' },
   { title: 'Мінімальне замовлення', price: '800' },
 ];

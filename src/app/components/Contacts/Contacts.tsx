@@ -123,10 +123,10 @@ export const Contacts = () => {
         className={styles.contactInfo}
       >
         <div className={styles.left}>
-          <Link href="tel:0504320020" className={styles.phone}>
+          <a href="tel:0504320020" target="_self" className={styles.phone}>
             <Phone />
             <p>+380 (50) 432-00-20</p>
-          </Link>
+          </a>
           <Link
             className={styles.location}
             href={mapsUrl}

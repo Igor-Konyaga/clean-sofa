@@ -50,10 +50,10 @@ export const Navigation = ({ openMenu, setOpenMenu }: Props) => {
       </ul>
 
       <div className={styles.contactInfo}>
-        <Link href="tel:0504320020" className={styles.phone}>
+        <a href="tel:0504320020" target="_self" className={styles.phone}>
           <Phone />
           <p>+380 (50) 432-00-20</p>
-        </Link>
+        </a>
         <Link
           className={styles.location}
           href={mapsUrl}
@@ -65,32 +65,32 @@ export const Navigation = ({ openMenu, setOpenMenu }: Props) => {
         </Link>
       </div>
 
-			<div className={styles.socialLinks}>
-          <Link
-            className={styles.instSocialLink}
-            href="https://www.instagram.com/himchistka_kylymiv?utm_source=qr&igsh=MThwcW1ieGNvcXRxdg%3D%3D"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <InstagramIcon />
-          </Link>
-          <Link
-            className={styles.socialLink}
-            href="https://www.facebook.com/share/15pnnsSwEh/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FacebookIcon />
-          </Link>
-          <Link
-            className={styles.socialLink}
-            href="https://t.me/OlexandrBSE"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <TelegramIcon />
-          </Link>
-        </div>
+      <div className={styles.socialLinks}>
+        <Link
+          className={styles.instSocialLink}
+          href="https://www.instagram.com/himchistka_kylymiv?utm_source=qr&igsh=MThwcW1ieGNvcXRxdg%3D%3D"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <InstagramIcon />
+        </Link>
+        <Link
+          className={styles.socialLink}
+          href="https://www.facebook.com/share/15pnnsSwEh/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FacebookIcon />
+        </Link>
+        <Link
+          className={styles.socialLink}
+          href="https://t.me/OlexandrBSE"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <TelegramIcon />
+        </Link>
+      </div>
     </nav>
   );
 };
