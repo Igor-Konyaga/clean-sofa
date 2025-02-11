@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const TOKEN = '7808532859:AAGmDwaKKsGoxpJC2thb2O6-czKNB8r42j8';
-const CHAT_ID = '-4784064551';
+const CHAT_ID = '-1002147492343';
 const URL_API_TG = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
 
 export const fetchTelegramMessage = async (message: string) => {
