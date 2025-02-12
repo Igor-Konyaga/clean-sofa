@@ -54,15 +54,19 @@ export const Navigation = ({ openMenu, setOpenMenu }: Props) => {
           <Phone />
           <p>+380 (50) 432-00-20</p>
         </a>
-        <Link
-          className={styles.location}
-          href={mapsUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Location />
-          <p>Ужгород вул.О.Блистіва 11</p>
-        </Link>
+
+        <div className={styles.address}>
+          <Link
+            className={styles.location}
+            href={mapsUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Location />
+            <p>Ужгород вул.О.Блистіва 1</p>
+          </Link>
+          <p className={styles.area}> (на території заводу Електродвигун)</p>
+        </div>
       </div>
 
       <div className={styles.socialLinks}>

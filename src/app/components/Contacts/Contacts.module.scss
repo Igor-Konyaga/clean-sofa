@@ -189,12 +189,12 @@
 			@media screen and (max-width: 768px) {
 				font-size: 22px;
 			}
+
 			@media screen and (max-width: 380px) {
 				font-size: 18px;
 			}
 
-			.phone,
-			.location {
+			.phone {
 				display: flex;
 				align-items: center;
 				column-gap: 8px;
@@ -207,6 +207,30 @@
 					color: $hover-color;
 				}
 			}
+
+			.address {
+				.location {
+					display: flex;
+					align-items: center;
+					column-gap: 8px;
+					margin-bottom: 4px;
+
+					transition: color 0.3s;
+
+					&:hover,
+					&:focus {
+						transition: color 0.3s;
+						color: $hover-color;
+					}
+				}
+
+				.area {
+					font-size: 14px;
+					text-align: center;
+					margin-left: 24px;
+				}
+			}
+
 		}
 
 		.right {
