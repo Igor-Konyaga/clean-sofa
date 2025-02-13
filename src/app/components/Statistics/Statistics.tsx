@@ -16,6 +16,8 @@ const data = [
   },
 ];
 
+// test
+
 export const Statistics = () => {
   return (
     <section className={styles.statisticsSection}>
