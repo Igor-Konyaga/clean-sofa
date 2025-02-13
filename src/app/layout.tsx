@@ -14,8 +14,8 @@ const arima = Arima({
 });
 
 export const metadata: Metadata = {
-  title: 'Clean Sofa',
-  description: 'Хімчистка меблів',
+  title: 'АнтиБруд',
+  description: 'Хімчистка меблів та прання килимів в Ужгорожі',
 };
 
 export default function RootLayout({
